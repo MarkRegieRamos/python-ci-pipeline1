@@ -13,4 +13,3 @@ def test_check_sim_card():
     assert check_sim_card("0917123") == "SIM card number 0917123 is invalid."
     assert check_sim_card("12345678901") == "SIM card number 12345678901 is invalid."
     assert check_sim_card("0917123456A") == "SIM card number 0917123456A is invalid."
-    
