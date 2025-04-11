@@ -1,10 +1,12 @@
 from sim_checker import is_valid_sim, check_sim_card
 
+
 def test_is_valid_sim():
-    assert is_valid_sim("09171234567") == True
-    assert is_valid_sim("0917123") == False
-    assert is_valid_sim("12345678901") == False
-    assert is_valid_sim("0917123456A") == False
+    assert is_valid_sim("09171234567") is True
+    assert is_valid_sim("0917123") is False
+    assert is_valid_sim("12345678901") is False
+    assert is_valid_sim("0917123456A") is False
+
 
 def test_check_sim_card():
     assert check_sim_card("09171234567") == "SIM card number 09171234567 is valid."
